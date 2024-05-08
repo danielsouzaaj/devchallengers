@@ -42,7 +42,6 @@ body {
 }
 
 .card-text h1 {
-    /* font-family: "Poppins", sans-serif; */
     font-size: 24px;
     font-weight: 700;
     color: #111729;
@@ -74,7 +73,6 @@ body {
 }
 
 .profile-text h2 {
-    /* font-family: "Poppins", sans-serif; */
     font-size: 15px;
     font-weight: 700;
     color: #111729;
