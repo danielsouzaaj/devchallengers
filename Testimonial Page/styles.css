@@ -1,0 +1,137 @@
+:root {
+    --body-bg-color: #FAFAF9;
+    --card-bg-color: #FFFFFF;
+    --card-boxshadow-color: #D4D4D8;
+    --star-bg-color: #F5C044;
+    --text-title-color: #18181B;
+    --text-body-color: #52525A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    font-family: "Sora", sans-serif;
+}
+
+main {
+    max-width: 1136px;
+    padding-top: 162px;
+    margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-text,
+.hero-testimonial {
+    flex-basis: 49%;
+}
+
+.hero-text span {
+    background-color: var(--star-bg-color);
+    display: inline-block;
+    padding: 13px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: var(--text-title-color);
+    margin-bottom: 12px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: var(--text-body-color);
+    margin-bottom: 32px;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.list-item {
+    font-size: 14px;
+    color: var(--text-body-color);
+    vertical-align: top;
+}
+
+.list-item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.list-item::before {
+    content: url(./img/Done_ring_round_fill.svg);
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.hero-testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    width: 345px;
+    padding: 28px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 30px 100px -30px var(--card-boxshadow-color);
+}
+
+.card:first-child {
+    align-self: flex-end;
+}
+
+.card-hero {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 16px;
+}
+
+.card-hero img {
+    width: 85px;
+}
+
+.card-stars {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.card-text h2 {
+    font-size: 16px;
+    color: var(--text-title-color);
+    margin-bottom: 8px;
+}
+
+.card-text p {
+    font-size: 15px;
+    color: var(--text-body-color);
+}
+
+@media (max-width: 960px) {
+
+    main {
+        padding: 100px 45px;
+    }
+
+    .hero {
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    .hero-testimonial {
+        row-gap: 40px;
+    }
+}
