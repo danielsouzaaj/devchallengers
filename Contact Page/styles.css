@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+    background-image: url(./img/bg-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 53px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 20px 0 44px;
+}
+
+main {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.headline {
+    max-width: 746px;
+    margin: 0 auto 72px;
+}
+
+.headline h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #F8FAFC;
+    margin-bottom: 16px;
+}
+
+.headline p {
+    font-size: 32px;
+    color: #F8FAFC;
+}
+
+form {
+    max-width: 810px;
+    padding: 32px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+}
+fieldset {
+    display: flex;
+    column-gap: 18px;
+    border: none;
+    margin-bottom: 24px;
+}
+
+label {
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    color: #F8FAFC;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    display: block;
+    padding: 24px 18px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #111729;
+}
+
+input,
+select,
+textarea {
+    margin-top: 4px;
+}
+
+textarea::placeholder {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111729;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: 900;
+    color: #CDD5E0;
+}
+
+select {
+    appearance: none;
+}
+
+.select-box {
+    position: relative;
+}
+
+.select-box::after {
+    content: url(./img/Expand_down.svg);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 18px;
+    pointer-events: none;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+}
+
+button {
+    font-size: 20px;
+    font-weight: 800;
+    color: #4036A9;
+}
