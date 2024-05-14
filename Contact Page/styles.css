@@ -1,3 +1,13 @@
+:root {
+    --text-color-title: #F8FAFC;
+    --text-color-subtitle: #F8FAFC;
+    --text-color-label: #F8FAFC;
+    --text-color-form: #111729;
+    --text-color-textarea-ph: #111729;
+    --text-color-input-ph: #CDD5E0;
+    --text-color-button: #4036A9;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -34,13 +44,13 @@ main {
 .headline h1 {
     font-size: 64px;
     font-weight: 700;
-    color: #F8FAFC;
+    color: var(--text-color-title);
     margin-bottom: 16px;
 }
 
 .headline p {
     font-size: 32px;
-    color: #F8FAFC;
+    color: var(--text-color-subtitle);
 }
 
 form {
@@ -53,6 +63,7 @@ form {
     backdrop-filter: blur(7.9px);
     -webkit-backdrop-filter: blur(7.9px);
 }
+
 fieldset {
     display: flex;
     column-gap: 18px;
@@ -61,26 +72,30 @@ fieldset {
 }
 
 label {
-    width: 100%;
-    display: block;
     text-align: left;
     font-size: 14px;
     font-weight: 400;
-    color: #F8FAFC;
+    color: var(--text-color-label);
 }
 
+label,
 input,
 select,
 textarea,
 button {
     width: 100%;
     display: block;
+}
+
+input,
+select,
+textarea {
     padding: 24px 18px;
     border: none;
     border-radius: 15px;
     font-size: 16px;
     font-weight: 700;
-    color: #111729;
+    color: var(--text-color-form);
 }
 
 input,
@@ -89,20 +104,24 @@ textarea {
     margin-top: 4px;
 }
 
-textarea::placeholder {
+textarea::placeholder,
+input::placeholder {
     font-size: 16px;
     font-weight: 700;
-    color: #111729;
 }
 
 input::placeholder {
-    font-size: 16px;
-    font-weight: 900;
-    color: #CDD5E0;
+    color: var(--text-color-input-ph);
 }
+
+textarea::placeholder {
+    color: var(--text-color-textarea-ph);
+}
+
 
 select {
     appearance: none;
+    cursor: pointer;
 }
 
 .select-box {
@@ -121,10 +140,49 @@ select {
 textarea {
     height: 200px;
     resize: none;
+    margin-bottom: 24px;
 }
 
 button {
+    padding: 24px 18px;
+    border: none;
+    border-radius: 15px;
     font-size: 20px;
     font-weight: 700;
-    color: #4036A9;
+    color: var(--text-color-button);
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        padding: 0 30px;
+    }
+
+    .headline {
+        max-width: 470px;
+    }
+
+    .headline h1 {
+        font-size: 48px;
+    }
+
+    .headline p {
+        font-size: 20px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    fieldset {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 24px;
+    }
 }
