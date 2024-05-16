@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --bg-body: #F2F9FE;
+    --bg-btn: #2A4DD0;
+    --bg-darkmode-light: #ffffff;
+    --bg-darkmode-dark: transparent;
+    --fill-svg-light: #223344;
+    --fill-svg-dark: #F2F9FE;
+    --text-color-title: #223344;
+    --text-color-primay: #111729;
+    --text-color-secondary: #909193;
+
+    background: var(--bg-body);
+    font-family: "Poppins", sans-serif;
+    transition: all 1s ease;
+}
+
+.var-dark {
+    --bg-body: #111729;
+    --bg-darkmode-light: transparent;
+    --bg-darkmode-dark: #ffffff;
+    --fill-svg-light: #F2F9FE;
+    --fill-svg-dark: #223344;
+    --text-color-title: #F2F9FE;
+    --text-color-primay: #F2F9FE;
+}
+
+img {
+    display: block;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 72px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 28px 0 92px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.nav-item {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color-secondary);
+}
+
+.nav-item:first-of-type {
+    color: var( --text-color-primay);
+}
+
+.darkmode-btn {
+    max-height: 24px;
+    background: #223344;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    border-radius: 20px;
+}
+
+.darkmode-btn svg {
+    width: 20px;
+}
+
+.darkmode-dark,
+.darkmode-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: background .5s ease;
+}
+
+.darkmode-light {
+    background: var(--bg-darkmode-light);
+}
+
+.darkmode-dark {
+    background: var(--bg-darkmode-dark);
+}
+
+.darkmode-light svg * {
+    fill: var(--fill-svg-light);
+    stroke: var(--fill-svg-light);
+}
+
+.darkmode-dark svg * {
+    fill: var(--fill-svg-dark);
+    stroke: var(--fill-svg-dark);
+}
+
+.hero .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.hero-content {
+    max-width: 465px;
+}
+
+.hero-content span {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: var( --text-color-primay);
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 90px;
+    color: var(--text-color-title);
+    margin: 12px 0 32px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color-secondary);
+    margin-bottom: 22px;
+}
+
+.hero-btns {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+    margin-bottom: 40px;
+}
+
+.hero-btns a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2A4DD0;
+}
+
+.hero-btns a:first-child {
+    background: #2A4DD0;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    border-radius: 13px;
+    color: #FFFFFF;
+}
+
+.hero-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.hero-list li {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color-secondary);
+}
+
+.hero-list li::before {
+    content: url(../image/Done_ring_round_fill.svg);
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.hero img {
+    flex-basis: 50%;
+    align-self: flex-start;
+}
