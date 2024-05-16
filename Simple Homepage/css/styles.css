@@ -131,14 +131,14 @@ header .container {
 .hero-content h1 {
     font-size: 60px;
     font-weight: 700;
-    line-height: 97px;
+    line-height: 93px;
     color: var(--text-color-title);
     margin: 12px 0 32px;
 }
 
 .hero-content p {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--text-color-secondary);
     margin-bottom: 22px;
 }
@@ -185,6 +185,6 @@ header .container {
 }
 
 .hero img {
-    flex-basis: 50%;
-    align-self: flex-start;
+    flex-basis: 45%;
+    align-self: center;
 }
