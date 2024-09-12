@@ -1,71 +1,87 @@
+:root {
+    --clr-bg-body: #FAFAF9;
+    --clr-bg-card: #FFFFFF;
+    --clr-bg-tag: #E6D6FC;
+    --clr-headline: #20293A;
+    --clr-text-body: #6C727F;
+    --clr-text-tag: #883AE1;
+    --clr-border-hr: #E5EAF0;
+
+    --ff-default: "Sora", sans-serif;
+
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Sora", sans-serif;
 }
 
 body {
+    background-color: var(--clr-bg-body);
+    color: var(--clr-text-body);
     height: 100vh;
+    font-family: var(--ff-default);
+    font-size: 0.875rem;
+    font-weight: var(--fw-400);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FAFAF9;
 }
 
+/* Text styles */
+
+.card-text h1 {
+    font-size: 1.125rem;
+    color: var(--clr-headline);
+    margin-bottom: 0.375rem;
+}
+
+.card hr + p {
+    padding: 0 1rem;
+    margin-top: 1.25rem;
+    font-size: 0.75rem;
+}
+
+/* General styles */
+
 .card {
-    background-color: #FFFFFF;
+    background-color: var(--clr-bg-card);
     box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
-    max-width: 368px;
-    padding: 16px 0 20px;
-    border-radius: 16px;
+    max-width: 23rem;
+    padding: 1rem 0 1.25rem;
+    border-radius: 1rem;
 }
 
 .container {
-    padding: 0 16px;
+    padding: 0 1rem;
 }
 
 .card img {
     width: 100%;
     display: block;
-    border-radius: 10px;
-    margin-bottom: 16px;
+    border-radius: 0.625rem;
+    margin-bottom: 1rem;
 }
 
 .card span {
     display: inline-block;
-    background-color: #E6D6FC;
-    padding: 6px 16px;
-    border-radius: 16px;
-    margin-bottom: 16px;
-    font-size: 10px;
-    font-weight: 600;
-    color: #883AE1;
+    background-color: var(--clr-bg-tag);
+    padding: 0.375rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.625rem;
+    font-weight: var(--fw-600);
+    color: var(--clr-text-tag);
 }
 
 .card-text {
-    margin-bottom: 20px;
-}
-
-.card-text h1 {
-    font-size: 18px;
-    color: #20293A;
-    margin-bottom: 6px;
-}
-
-.card-text p {
-    font-size: 14px;
-    color: #6C727F;
+    margin-bottom: 1.25rem;
 }
 
 .card hr {
-    border: 1px solid #E5EAF0;
+    border: 1px solid var(--clr-border-hr);
 }
-
-.card hr + p {
-    padding: 0 16px;
-    margin-top: 20px;
-    font-size: 12px;
-    color: #6C727F;
-}
-
